@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		C019B1B61AD8696C00B0A007 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C019B1B51AD8696C00B0A007 /* AppDelegate.swift */; };
-		C019B1B81AD8696C00B0A007 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C019B1B71AD8696C00B0A007 /* ViewController.swift */; };
+		C019B1B81AD8696C00B0A007 /* ViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C019B1B71AD8696C00B0A007 /* ViewControllers.swift */; };
 		C019B1BB1AD8696C00B0A007 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C019B1B91AD8696C00B0A007 /* Main.storyboard */; };
 		C019B1BD1AD8696C00B0A007 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C019B1BC1AD8696C00B0A007 /* Images.xcassets */; };
 		C019B1C01AD8696C00B0A007 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C019B1BE1AD8696C00B0A007 /* LaunchScreen.xib */; };
 		C019B1CC1AD8696C00B0A007 /* BBTransitionManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C019B1CB1AD8696C00B0A007 /* BBTransitionManagerTests.swift */; };
+		C019B1D61AD8698300B0A007 /* BBTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C019B1D51AD8698300B0A007 /* BBTransitionManager.swift */; };
+		C019B1D81AD8749800B0A007 /* BBModalInsetTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C019B1D71AD8749800B0A007 /* BBModalInsetTransition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +31,15 @@
 		C019B1B01AD8696C00B0A007 /* BBTransitionManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BBTransitionManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C019B1B41AD8696C00B0A007 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C019B1B51AD8696C00B0A007 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C019B1B71AD8696C00B0A007 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C019B1B71AD8696C00B0A007 /* ViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllers.swift; sourceTree = "<group>"; };
 		C019B1BA1AD8696C00B0A007 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C019B1BC1AD8696C00B0A007 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C019B1BF1AD8696C00B0A007 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		C019B1C51AD8696C00B0A007 /* BBTransitionManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BBTransitionManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C019B1CA1AD8696C00B0A007 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C019B1CB1AD8696C00B0A007 /* BBTransitionManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBTransitionManagerTests.swift; sourceTree = "<group>"; };
+		C019B1D51AD8698300B0A007 /* BBTransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBTransitionManager.swift; sourceTree = "<group>"; };
+		C019B1D71AD8749800B0A007 /* BBModalInsetTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBModalInsetTransition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +82,13 @@
 			isa = PBXGroup;
 			children = (
 				C019B1B51AD8696C00B0A007 /* AppDelegate.swift */,
-				C019B1B71AD8696C00B0A007 /* ViewController.swift */,
+				C019B1B71AD8696C00B0A007 /* ViewControllers.swift */,
 				C019B1B91AD8696C00B0A007 /* Main.storyboard */,
 				C019B1BC1AD8696C00B0A007 /* Images.xcassets */,
 				C019B1BE1AD8696C00B0A007 /* LaunchScreen.xib */,
 				C019B1B31AD8696C00B0A007 /* Supporting Files */,
+				C019B1D51AD8698300B0A007 /* BBTransitionManager.swift */,
+				C019B1D71AD8749800B0A007 /* BBModalInsetTransition.swift */,
 			);
 			path = BBTransitionManager;
 			sourceTree = "<group>";
@@ -212,8 +218,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C019B1B81AD8696C00B0A007 /* ViewController.swift in Sources */,
+				C019B1B81AD8696C00B0A007 /* ViewControllers.swift in Sources */,
 				C019B1B61AD8696C00B0A007 /* AppDelegate.swift in Sources */,
+				C019B1D81AD8749800B0A007 /* BBModalInsetTransition.swift in Sources */,
+				C019B1D61AD8698300B0A007 /* BBTransitionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

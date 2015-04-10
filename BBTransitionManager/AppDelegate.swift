@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  BBTransitionManager
 //
-//  Created by Palringo on 10/04/2015.
-//  Copyright (c) 2015 sobox. All rights reserved.
+//  Created by Benjamin Briggs on 10/04/2015.
+//  Copyright (c) 2015 Benjamin Briggs. All rights reserved.
 //
 
 import UIKit

@@ -1,5 +1,7 @@
 # BBTransitionManager
 
+![demo](Demo.gif)
+
 TODO: Write a project description
 
 ## Installation

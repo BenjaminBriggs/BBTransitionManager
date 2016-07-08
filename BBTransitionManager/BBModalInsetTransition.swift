@@ -32,7 +32,7 @@ class BBModalInsetTransition: BBTransitionManager {
 		blackOut?.alpha = 0
 		toView.transform = CGAffineTransformConcat( CGAffineTransformMakeTranslation(0, container.bounds.height),CGAffineTransformMakeScale(1.3, 1.3))
 
-	UIView.animateWithDuration(duration, delay: 0.0, usingSpringWithDamping: 0.9, initialSpringVelocity: 0.9, options: UIViewAnimationOptions.allZeros, animations: { () -> Void in
+	UIView.animateWithDuration(duration, delay: 0.0, usingSpringWithDamping: 0.9, initialSpringVelocity: 0.9, options: UIViewAnimationOptions(), animations: { () -> Void in
 
 		self.blackOut?.alpha = 1
 			toView.transform = CGAffineTransformIdentity
@@ -47,7 +47,7 @@ class BBModalInsetTransition: BBTransitionManager {
 	override func dissmissToView(toView: UIView, fromView: UIView, inContainer container: UIView, withDuration duration: NSTimeInterval, completion: ((Bool) -> Void)) {
 
 		blackOut?.alpha = 1
-		UIView.animateWithDuration(duration, delay: 0.0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.6, options: UIViewAnimationOptions.allZeros, animations: { () -> Void in
+		UIView.animateWithDuration(duration, delay: 0.0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.6, options: UIViewAnimationOptions(), animations: { () -> Void in
 
 			self.blackOut?.alpha = 0
 			fromView.transform = CGAffineTransformConcat( CGAffineTransformMakeTranslation(0, container.bounds.height),CGAffineTransformMakeScale(1.1, 1.1))

@@ -23,7 +23,7 @@ class BBTransitionManager: NSObject, BBTransitionManagerProtocol  {
 
 	final func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
 
-		let container = transitionContext.containerView()
+    guard let container = transitionContext.containerView() else {return}
 
 		let fromView: UIView! = transitionContext.viewForKey(UITransitionContextFromViewKey) ?? transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey)!.view
 		let toView: UIView! = transitionContext.viewForKey(UITransitionContextToViewKey) ?? transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey)!.view
@@ -50,7 +50,7 @@ class BBTransitionManager: NSObject, BBTransitionManagerProtocol  {
 
 		toView.transform = CGAffineTransformMakeTranslation(0, container.bounds.size.height)
 
-		UIView.animateWithDuration(duration, delay: 0.0, usingSpringWithDamping: 0.9, initialSpringVelocity: 0.8, options: nil, animations: {
+		UIView.animateWithDuration(duration, delay: 0.0, usingSpringWithDamping: 0.9, initialSpringVelocity: 0.8, options: [], animations: {
 
 			toView.transform = CGAffineTransformIdentity
 			fromView.transform = CGAffineTransformMakeScale(0.9, 0.9)
@@ -71,7 +71,7 @@ class BBTransitionManager: NSObject, BBTransitionManagerProtocol  {
 		toView.transform = CGAffineTransformMakeScale(0.9, 0.9)
 		toView.alpha = 0.8
 
-		UIView.animateWithDuration(duration, delay: 0.0, usingSpringWithDamping: 0.9, initialSpringVelocity: 0.8, options: nil, animations: {
+		UIView.animateWithDuration(duration, delay: 0.0, usingSpringWithDamping: 0.9, initialSpringVelocity: 0.8, options: [], animations: {
 
 			fromView.transform = CGAffineTransformMakeTranslation(0, container.bounds.size.height)
 			toView.transform = CGAffineTransformIdentity
@@ -86,7 +86,7 @@ class BBTransitionManager: NSObject, BBTransitionManagerProtocol  {
 		})
 	}
 
-	final func transitionDuration(transitionContext: UIViewControllerContextTransitioning) -> NSTimeInterval {
+	final func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
 		return duration
 	}
 

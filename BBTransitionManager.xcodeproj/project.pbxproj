@@ -162,6 +162,8 @@
 		C019B1A81AD8696C00B0A007 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0730;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = sobox;
 				TargetAttributes = {
@@ -419,6 +421,7 @@
 				C019B1D11AD8696C00B0A007 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C019B1D21AD8696C00B0A007 /* Build configuration list for PBXNativeTarget "BBTransitionManagerTests" */ = {
 			isa = XCConfigurationList;
@@ -427,6 +430,7 @@
 				C019B1D41AD8696C00B0A007 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

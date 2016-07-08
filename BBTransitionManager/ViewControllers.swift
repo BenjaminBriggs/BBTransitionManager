@@ -26,7 +26,7 @@ class ViewController1: UIViewController {
 	}
 
 	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-		let destinationViewController = segue.destinationViewController as! UIViewController
+		let destinationViewController = segue.destinationViewController 
 		destinationViewController.transitioningDelegate = self.transitionManager
 	}
 }
